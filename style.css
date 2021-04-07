@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+}
+.wrapper {
+  background-color: #fff;
+  margin-top: 20px;
+  width: 90%;
+  padding: 50px;
+  box-shadow: 0.5px 0.5px 5px 0.5px;
+}
+
+header {
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin: 40px 0;
+}
+header h1 {
+  text-transform: uppercase;
+}
+header li {
+  list-style: none;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+}
+header ul {
+  margin: 20px 0;
+}
+
+section {
+  margin: 20px 0;
+}
+section > h4 {
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+section ul > li,
+section > p,
+section td {
+  font-size: 0.9rem;
+}
+th {
+  text-align: left;
+}
+td:first-child {
+  width: 350px;
+}
+.personal-attributes ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30px;
+}
+.personal-attributes li {
+  width: 50%;
+  list-style-type: square;
+  margin-bottom: 6px;
+}
+.technologies ul {
+  /* display: flex;
+  flex-wrap: wrap; */
+  margin-left: 30px;
+}
+.technologies li {
+  margin-bottom: 6px;
+  list-style-type: square;
+}
+.accomplishments ul {
+  margin-left: 30px;
+}
+.accomplishments p {
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+/*  medium devices  */
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    width: 90%;
+  }
+  header li {
+    display: inline;
+    border-right: 2px solid;
+    margin-right: 5px;
+    padding-right: 5px;
+    text-align: left;
+    list-style: none;
+    font-size: 0.8rem;
+  }
+
+  header li:last-child {
+    display: block;
+    border: none;
+    margin-top: 5px;
+    text-align: center;
+  }
+  header li:nth-child(4) {
+    border: none;
+  }
+  .personal-attributes li {
+    width: 33%;
+    list-style-type: square;
+  }
+  section ul > li,
+  section > p,
+  section td {
+    font-size: 1rem;
+  }
+}
+
+/*  large devices  */
+@media only screen and (min-width: 992px) {
+  .wrapper {
+    width: 850px;
+  }
+  .technologies ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .technologies li {
+    width: 50%;
+  }
+}
+
+/*  extra large devices  */
+@media only screen and (min-width: 1200px) {
+}
